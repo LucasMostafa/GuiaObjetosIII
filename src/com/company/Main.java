@@ -5,6 +5,9 @@ import com.company.ejercicio1.Cylinder;
 import com.company.ejercicio2.Person;
 import com.company.ejercicio2.StaffMember;
 import com.company.ejercicio2.Student;
+import com.company.ejercicio3.Circle1;
+import com.company.ejercicio3.Rectangle;
+import com.company.ejercicio3.Square;
 
 public class Main {
 
@@ -80,5 +83,20 @@ public class Main {
         }
 
         System.out.println("\nLa cuota total percibida por la institucion es de: " + totalFee);
+
+        //Ejercicio 3
+        Circle1 circle1= new Circle1();
+        Circle1 circle2= new Circle1("Rojo", 3);
+
+        Rectangle rectangle1= new Rectangle();
+        Rectangle rectangle2= new Rectangle("Azul", 2, 4);
+
+        System.out.println(circle1.toString());
+        System.out.println(circle2.toString());
+        System.out.println(rectangle1.toString());
+        System.out.println(rectangle2.toString());
+
+        Square square= new Square("Negro",12);
+        System.out.println(square.toString());
     }
 }
